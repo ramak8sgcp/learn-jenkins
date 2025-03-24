@@ -25,7 +25,7 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
     stages {
-        stage('print params') {
+        stage('print params'){
             steps {
                 echo "Hello ${params.PERSON}"
 
@@ -58,11 +58,12 @@ pipeline {
                 expression { env.GIT_BRANCH != "origin/main" }
             }
             steps {
-                sh 'echo this is deploy'
-                // error 'pipeline failed'
+
+                    sh 'echo This is deploy'
+                    //error 'pipeline failed'
+
             }
         }
-    }
     post   {
         always {
             echo "This section runs always"
