@@ -37,7 +37,7 @@ pipeline {
     }
 }
 
-## Before practice lab for practice
+## Before practice lab for 
 
 // pipeline {
 //     agent {
