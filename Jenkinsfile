@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'echo This is test'
+                sh 'echo This is test-1'
                 sh 'env'
             }
         }
