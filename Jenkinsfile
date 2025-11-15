@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        options{
+            timeout(time: 10, unit: 'MINUTES')
+            disableConcurrentBuilds()
+            //retry(1)
+        }
         stage('Build') {
             steps {
                 sh 'echo This is Build'
