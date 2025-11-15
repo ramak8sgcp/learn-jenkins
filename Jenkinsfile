@@ -1,5 +1,6 @@
 pipeline {
-    agent any
+    agent {
+        label 'AGENT-1'
     stages {
         options{
             timeout(time: 10, unit: 'MINUTES')
@@ -42,7 +43,7 @@ pipeline {
     }
 }
 
-## Before practice lab for 
+// Before practice lab for 
 
 // pipeline {
 //     agent {
