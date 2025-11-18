@@ -6,6 +6,7 @@ pipeline {
         // Timeout counter starts AFTER agent is allocated
         timeout(time: 30, unit: 'MINUTES')
         disableConcurrentBuilds()
+        retry(1)
     }
     stages {
         stage('Build') {
@@ -23,8 +24,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh "echo this is Deploy"
-                // error 'pipeline failed'
-                //
+                error 'pipeline failed'
             }
         }
     }
