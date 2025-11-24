@@ -12,7 +12,7 @@ AWS Credentials
 AWS Steps
 Rebuild
 Ansi Color
-SonarScanner
+SonarQube Scanner
 Restart Jenkins once plugins are installed
 
 Manage Credentials:
