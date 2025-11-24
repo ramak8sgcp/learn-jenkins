@@ -2,6 +2,8 @@
 
 #Step2: # Resize EBS Storage
 
+# Resize EBS Storage
+
 check the partitions
 ```
 lsblk
@@ -9,7 +11,9 @@ lsblk
 
 Use a tool like growpartition (nvme0n1p4) to use the remaining unallocated space on the disk.
 ```
-sudo grort to resize the existing partition to fill the available space.This will resize the fourth sudo growpart /dev/nvme0n1 4
+sudo grort to resize the existing partition to fill the available space.This will resize the fourth 
+sudo growpart /dev/nvme0n1 4
+
 ```
 
 Extend the Logical Volumes

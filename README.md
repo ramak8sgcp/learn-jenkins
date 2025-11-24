@@ -4,7 +4,7 @@ Jenkins
 ==========
 Install below plugins when you started Jenkins.
 
-Plugins:
+Plugins: # Do restart once plugins installed 
 --------
 Pipeline stage view
 Pipeline Utility Steps
