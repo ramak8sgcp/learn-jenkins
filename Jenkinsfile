@@ -77,7 +77,7 @@ pipeline {
             deleteDir()
         }
         success {
-            echo "This sections run when pipeline success "
+            echo "This sections run when pipeline success"
         }
         failure {
             echo "This sections run when pipeline failure"
